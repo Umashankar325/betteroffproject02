@@ -1,0 +1,29 @@
+
+
+.ri-menu-line{
+  display:none;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+  .navcontainer > .center,
+  .rightContant {
+    display: none;
+  }
+  .ri-menu-line {
+
+    display: inline-block;
+    /* height: 200px;
+    font-size: 25px;
+    font-weight: 900; */
+    
+  }
+  .pag1 > .center {
+    display: block;
+    padding: 0;
+  }
+
+}

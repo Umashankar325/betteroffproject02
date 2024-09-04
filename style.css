@@ -16,7 +16,6 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  
 }
 
 .navcontainer {
@@ -34,7 +33,6 @@ body {
   font-weight: 900;
   font-size: 25px;
   color: black;
-  /* mix-blend-mode:; */
 }
 .navcontainer > .center {
   display: flex;
@@ -62,9 +60,10 @@ body {
 .navcontainer > .right:hover a {
   border-bottom: 1px solid black;
 }
+
 .pag1 {
   width: 100vw;
-  /* height: 100vh; */
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,7 +95,7 @@ body {
   /* padding-right: 20px; */
 }
 .pag1 > .center > .right {
-  padding-left: 300px;
+  padding-left: 30vw;
   font-size: 50px;
   padding-right: 50px;
   font-weight: 400;
@@ -117,15 +116,13 @@ body {
   justify-content: top;
   padding: 0;
 } */
-.slider{
+.slider {
   width: 100%;
   overflow-x: hidden;
   white-space: nowrap;
-  
 }
 
-
-.slider>.contant {
+.slider > .contant {
   display: inline-block;
   /* jsj */
   animation: slide-text 10s infinite linear;
@@ -133,9 +130,7 @@ body {
 
 @keyframes slide-text {
   0% {
-      transform: translateX(o);
-    
-
+    transform: translateX(o);
   }
 
   100% {
@@ -143,16 +138,15 @@ body {
   }
 }
 
-.slider>.contant{
+.slider > .contant {
   white-space: nowrap;
 }
-.slider>.contant>span{
+.slider > .contant > span {
   font-size: 350px;
   font-weight: 900;
-  white-space:none;
+  white-space: none;
 }
-.slider>.contant > img {
-
+.slider > .contant > img {
   height: 250px;
   object-fit: cover;
   object-position: center;
@@ -191,7 +185,7 @@ hr {
 .pag3 {
   display: flex;
 }
-span{
+span {
   display: inline-block;
 
   font-size: 20px;
@@ -210,13 +204,42 @@ span{
   font-weight: 600;
   color: #949690;
 }
-.pag3 > .left {
+.pag3 > .left,
+.pag4nav > .left {
   width: 50vw;
 }
-.pag3 > .center {
+.pag3 > .left span,
+.pag4nav > h1 > span {
+  background-color: black;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.pag3 > .center,
+.pag4nav > .center {
   width: 30vw;
 }
-.pag3 > .right {
+.pag3 > .right,
+.pag4nav > .right {
   width: 20vw;
   text-align: right;
+}
+.pag4 > .pag4nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+}
+.pag4main {
+  font-size: 250px;
+  font-weight: 900;
+  text-align: center;
+  overflow: hidden;
+}
+.pag4main > hr {
+  height: 0;
+}
+.pag4main > video {
+  height: 200px;
+  /* width: 350px; */
 }
