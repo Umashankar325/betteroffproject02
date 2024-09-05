@@ -1,9 +1,6 @@
-
-
-.ri-menu-line{
-  display:none;
+.ri-menu-line {
+  display: none;
 }
-
 
 @media (max-width: 600px) {
   body {
@@ -14,16 +11,79 @@
     display: none;
   }
   .ri-menu-line {
-
     display: inline-block;
     /* height: 200px;
     font-size: 25px;
     font-weight: 900; */
-    
+  }
+  .firstdiv {
+    height: 100px;
   }
   .pag1 > .center {
-    display: block;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 0 20px;
+  }
+
+  .pag1 > .center > .left {
+    width: 100%;
+    font-size: 25px;
+  }
+  .pag1 > .center > .left > button {
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+  }
+
+  .pag1 > .center > .right {
+    padding-left: 0px;
+    font-size: 35px;
+    padding-right: 0px;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .slider > .contant > span {
+    font-size: 250px;
+  }
+  .slider > .contant > img {
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    justify-content: top;
     padding: 0;
   }
 
+  .pag2 p {
+    /* padding-left: 300px; */
+    font-size: 30px;
+    padding-right: 0px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    line-height: 50px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+  .pag2 > .left {
+    padding: 0px;
+    width: 90vw;
+    /* background-color: red; */
+  }
+  .pag2 > .right {
+    width: 10vw;
+  }
+  .pag3 {
+    /* display: flex; */
+    flex-direction: column;
+  }
+  .pag3 > .left,
+  .pag3 > .center,
+  .pag3 > .right {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .right > h1 {
+    text-align: left;
+  }
 }
