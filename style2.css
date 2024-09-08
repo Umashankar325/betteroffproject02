@@ -4,7 +4,7 @@
 
 @media (max-width: 600px) {
   body {
-    background-color: red;
+    /* background-color: red; */
   }
   .navcontainer > .center,
   .rightContant {
@@ -87,7 +87,9 @@
   .right > h1 {
     text-align: left;
   }
-
+.pag4{
+  overflow-x: hidden;
+}
   .pag4nav > .left,
   .pag4nav > .right,
   .pag4nav > .center {
@@ -106,5 +108,20 @@
   }
   .pag4main > video {
     height: 150px;
+  }
+  .pag5 > .top {
+    flex-direction: column;
+    
+    overflow-x: hidden;
+  }
+  .pag5 > .top > .left {
+    width: 100vw;
+    padding:20px ;
+  }
+  .pag5 > .top > .right {
+    width: 100vw;
+    font-size: 30px;
+    padding:20px ;
+    /* font-size: 50px; */
   }
 }
